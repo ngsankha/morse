@@ -1,6 +1,6 @@
 # Morse
 
-An estoric programming language consiting of only `.` and `_`.
+An estoric programming language consisting of only `.` and `_`.
 
 ## Example
 
