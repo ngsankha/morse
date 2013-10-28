@@ -66,20 +66,3 @@ void pushChar(char value) {
         charTop = temp;
     }
 }
-
-void display()
-{
-     struct intNode *var=intTop;
-     if(var!=NULL)
-     { 
-          printf("\nElements are as:\n");
-          while(var!=NULL)
-          {
-               printf("\t%d\n",var->data);
-               var=var->next;
-          } 
-     printf("\n");
-     }
-     else
-     printf("\nStack is Empty");
-}
