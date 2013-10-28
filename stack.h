@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define ERR_INT_STACK_EMPTY "Error: Empty Integer Stack.\n"
+#define ERR_INT_STACK_EMPTY  "Error: Empty Integer Stack.\n"
 #define ERR_CHAR_STACK_EMPTY "Error: Empty Integer Stack.\n"
 
 struct intNode {

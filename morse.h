@@ -10,10 +10,11 @@
 #include "stack.h"
 #include "tokens.h"
 
-#define ERR_FILE_OPEN "Error: Unable to openfile.\n"
-#define ERR_FILE_UNSPECIFIED "Error! No input file specified.\n"
-#define ERR_LINE_NOT_FOUND "Error: Line not found.\n"
-#define ERR_FILE_OPEN_CODE 1
+#define ERR_FILE_OPEN           "Error: Unable to openfile.\n"
+#define ERR_FILE_UNSPECIFIED    "Error! No input file specified.\n"
+#define ERR_LINE_NOT_FOUND      "Error: Line not found.\n"
+
+#define ERR_FILE_OPEN_CODE      1
 #define ERR_LINE_NOT_FOUND_CODE 2
 
 size_t lineLen = 0;
