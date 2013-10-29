@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Morse : what if morse code became a programming language?" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Morse</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/sankha93/morse">View on GitHub</a>
+
+          <h1 id="project_title">Morse</h1>
+          <h2 id="project_tagline">what if morse code became a programming language?</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/sankha93/morse/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/sankha93/morse/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="morse" class="anchor" href="#morse"><span class="octicon octicon-link"></span></a>Morse</h1>
+
+<p>An estoric programming language consisting of only <code>.</code> and <code>_</code>.</p>
+
+<h2>
+<a name="example" class="anchor" href="#example"><span class="octicon octicon-link"></span></a>Example</h2>
+
+<p>The following program takes the input of two numbers from the user and adds them. It asks for the input again in case the result is zero.</p>
+
+<pre><code>____
+____
+_...
+_....
+__._
+_._.. _
+</code></pre>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>You can run your programs by:</p>
+
+<pre><code>./morse [filename]
+</code></pre>
+
+<h2>
+<a name="syntax" class="anchor" href="#syntax"><span class="octicon octicon-link"></span></a>Syntax</h2>
+
+<p>The execution environment maintains only 2 stacks, one for integers and other for characters.</p>
+
+<h3>
+<a name="stack-manipulation" class="anchor" href="#stack-manipulation"><span class="octicon octicon-link"></span></a>Stack Manipulation</h3>
+
+<p>Operations on the integer stack:</p>
+
+<ul>
+<li>
+<code>.</code> - Push an integer to the stack [parameter: positive integer].</li>
+<li>
+<code>_</code> - Duplicate the top most integer in the stack.</li>
+<li>
+<code>_.</code> - Swap two topmost integers in the stack.</li>
+<li>
+<code>__</code> - Pop topmost integer from the stack.</li>
+</ul><p>Operations on the character stack:</p>
+
+<ul>
+<li>
+<code>_..</code> - Push a character to the stack [parameter: character].</li>
+<li>
+<code>_._</code> - Duplicate the top most character in the stack.</li>
+<li>
+<code>__.</code> - Swap two topmost characters in the stack.</li>
+<li>
+<code>___</code> - Pop topmost character from the stack.</li>
+</ul><h3>
+<a name="arithmetic-operations" class="anchor" href="#arithmetic-operations"><span class="octicon octicon-link"></span></a>Arithmetic Operations</h3>
+
+<ul>
+<li>
+<code>_...</code> - Add top most integers and replace them with the result.</li>
+<li>
+<code>_--_</code> - Subtract top most integers and replace them with the result.</li>
+<li>
+<code>_._.</code> - Multiply top most integers and replace them with the result.</li>
+<li>
+<code>_.__</code> - Divide top most integers and replace them with the result.</li>
+<li>
+<code>__..</code> - Take modulus of top most integers and replace them with the result.</li>
+</ul><h3>
+<a name="inputoutput" class="anchor" href="#inputoutput"><span class="octicon octicon-link"></span></a>Input/Output</h3>
+
+<ul>
+<li>
+<code>__._</code> - Print topmost integer on the stack.</li>
+<li>
+<code>___.</code> - Print topmost character on the stack.</li>
+<li>
+<code>____</code> - Take an input of an integer from the user.</li>
+<li>
+<code>_....</code> - Take an input of a character from the user.</li>
+</ul><h3>
+<a name="flow-control" class="anchor" href="#flow-control"><span class="octicon octicon-link"></span></a>Flow Control</h3>
+
+<ul>
+<li>
+<code>_..._</code> - Jump to a line number. [parameter: line number]</li>
+<li>
+<code>_.._.</code> - Jump to a line number if topmost integer is positive. [parameter: line number]</li>
+<li>
+<code>_..__</code> - Jump to a line number if topmost integer is negative. [parameter: line number]</li>
+<li>
+<code>_._..</code> - Jump to a line number if topmost integer is zero. [parameter: line number]</li>
+</ul><h3>
+<a name="representing-literals" class="anchor" href="#representing-literals"><span class="octicon octicon-link"></span></a>Representing literals</h3>
+
+<p>Numbers can be represented in their binary form, with the 0s being <code>.</code> and 1s being <code>_</code>. Characters can be represented as the corresponding binary format of their ASCII code.</p>
+
+<p><strong>Note:</strong> You can only represent positive integers right now.</p>
+
+<p>For example:</p>
+
+<ul>
+<li>2 is <code>_.</code>
+</li>
+<li>20 is <code>_._..</code>
+</li>
+<li>A is <code>_....._</code> (binary representation of 65)</li>
+</ul><h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>MIT</p>
+
+<h2>
+<a name="contact" class="anchor" href="#contact"><span class="octicon octicon-link"></span></a>Contact</h2>
+
+<p>This was made out of sheer joblessness by Sankha. Follow him <a href="https://twitter.com/sankha93">@sankha93</a> on Twitter.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Morse maintained by <a href="https://github.com/sankha93">sankha93</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-42948095-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+
+  </body>
+</html>
