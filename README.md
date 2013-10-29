@@ -15,6 +15,12 @@ __._
 _._.. _
 ```
 
+## Build
+
+Download the source code and build it by running:
+
+    make
+
 ## Usage
 
 You can run your programs by:
@@ -41,7 +47,7 @@ Operations on the character stack:
 
 ### Arithmetic Operations
 * `_...` - Add top most integers and replace them with the result.
-* `_--_` - Subtract top most integers and replace them with the result.
+* `_.._` - Subtract top most integers and replace them with the result.
 * `_._.` - Multiply top most integers and replace them with the result.
 * `_.__` - Divide top most integers and replace them with the result.
 * `__..` - Take modulus of top most integers and replace them with the result.
@@ -53,10 +59,10 @@ Operations on the character stack:
 * `_....` - Take an input of a character from the user.
 
 ### Flow Control
-* `_..._` - Jump to a line number. [parameter: line number]
-* `_.._.` - Jump to a line number if topmost integer is positive. [parameter: line number]
-* `_..__` - Jump to a line number if topmost integer is negative. [parameter: line number]
-* `_._..` - Jump to a line number if topmost integer is zero. [parameter: line number]
+* `_..._` - Jump to a line number. _[parameter: line number]_
+* `_.._.` - Jump to a line number if topmost integer is positive. _[parameter: line number]_
+* `_..__` - Jump to a line number if topmost integer is negative. _[parameter: line number]_
+* `_._..` - Jump to a line number if topmost integer is zero. _[parameter: line number]_
 
 ### Representing literals
 
