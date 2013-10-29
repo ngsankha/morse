@@ -34,13 +34,13 @@ The execution environment maintains only 2 stacks, one for integers and other fo
 ### Stack Manipulation
 
 Operations on the integer stack:
-* `.` - Push an integer to the stack [parameter: positive integer].
+* `.` - Push an integer to the stack _[parameter: positive integer]_.
 * `_` - Duplicate the top most integer in the stack.
 * `_.` - Swap two topmost integers in the stack.
 * `__` - Pop topmost integer from the stack.
 
 Operations on the character stack:
-* `_..` - Push a character to the stack [parameter: character].
+* `_..` - Push a character to the stack _[parameter: character]_.
 * `_._` - Duplicate the top most character in the stack.
 * `__.` - Swap two topmost characters in the stack.
 * `___` - Pop topmost character from the stack.
